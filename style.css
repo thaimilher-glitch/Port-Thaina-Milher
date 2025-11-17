@@ -9,7 +9,6 @@
     --accent-light: #53caff;
     --text: #d9e6f2;
     --text-light: #b5c6d6;
-    --white: #ffffff;
 }
 
 /* ===========================
@@ -123,16 +122,31 @@ nav a:hover {
     text-align: center;
 }
 
-.sobre-intro {
-    max-width: 780px;
-    margin: 12px auto;
-    color: var(--text-light);
+.sobre-imagem-topo {
+    width: 260px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0px 0px 8px #29b3ff55);
 }
 
+.sobre-imagem-baixo {
+    width: 260px;
+    margin: 35px auto 10px;
+    display: block;
+    filter: drop-shadow(0px 0px 8px #29b3ff55);
+}
+
+.sobre-intro {
+    max-width: 850px;
+    margin: 12px auto;
+    color: var(--text-light);
+    font-size: 16.5px;
+}
+
+/* CARDS SOBRE MIM */
 .sobre-grid {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
@@ -142,6 +156,7 @@ nav a:hover {
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.08);
     transition: 0.3s;
+    text-align: center;
 }
 
 .sobre-card:hover {
@@ -176,9 +191,11 @@ nav a:hover {
 .categoria {
     margin: 45px 0 18px;
     font-size: 26px;
-    color: var(--accent);
+    font-weight: 600;
+    color: var(--accent-light);
 }
 
+/* CARDS DE PROJETO */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
@@ -199,7 +216,7 @@ nav a:hover {
 }
 
 .icone-card {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 8px;
 }
 
@@ -215,25 +232,23 @@ nav a:hover {
     font-size: 15px;
 }
 
-/* ===========================
-   MINIATURAS
-   =========================== */
+/* MINIATURAS (APENAS ÍCONES) */
 .thumbs {
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
-.thumbs img {
-    width: 31%;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid rgba(255,255,255,0.07);
+.thumbs .thumb {
+    width: 32%;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.08);
+    cursor: default; /* remove clique */
+    opacity: 0.75;
     transition: 0.3s;
 }
 
-.thumbs img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 12px #29b3ff55;
+.thumbs .thumb:hover {
+    opacity: 1;
 }
 
 /* ===========================
@@ -268,26 +283,6 @@ nav a:hover {
 }
 
 /* ===========================
-   LIGHTBOX
-   =========================== */
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 12px;
-    box-shadow: 0 0 25px #29b3ff88;
-}
-
-/* ===========================
    FOOTER
    =========================== */
 footer {
@@ -302,15 +297,21 @@ footer {
    RESPONSIVIDADE
    =========================== */
 @media (max-width: 600px) {
-    .thumbs img {
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .thumbs .thumb {
         width: 30%;
     }
 
-    .hero-text h2 {
-        font-size: 32px;
+    nav ul {
+        gap: 12px;
     }
 
-    nav ul {
-        gap: 15px;
+    .sobre-imagem-topo,
+    .sobre-imagem-baixo {
+        width: 220px;
     }
 }
