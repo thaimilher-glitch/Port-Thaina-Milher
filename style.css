@@ -1,1 +1,207 @@
+/* CORE COLORS */
+:root {
+    --bg: #0a1e2d;
+    --bg-light: #0f2d44;
+    --accent: #29b3ff;
+    --text: #d9e6f2;
+    --text-light: #b5c6d6;
+    --card-bg: #11324b;
+    --white: #ffffff;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: rgba(10, 30, 45, 0.8);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* HERO */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px #29b3ff88;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    color: var(--text-light);
+    margin: 10px 0 20px;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #53caff;
+}
+
+/* SOBRE MIM */
+.sobre {
+    padding: 70px 20px;
+    text-align: center;
+    background: var(--bg-light);
+}
+
+.sobre-text {
+    max-width: 700px;
+    margin: 10px auto 40px;
+    color: var(--text-light);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #1d465f;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #29b3ff44;
+}
+
+/* PORTFÓLIO */
+.portfolio {
+    padding: 70px 20px;
+}
+
+.categoria {
+    margin: 40px 0 15px;
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #153d57;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px #29b3ff55;
+}
+
+/* CONTATO */
+.contato {
+    padding: 70px 20px;
+    text-align: center;
+    background: var(--bg-light);
+}
+
+.contact-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-secondary {
+    padding: 12px 25px;
+    background: none;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #07141f;
+    color: var(--text-light);
+}
 
