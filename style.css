@@ -35,7 +35,6 @@ section {
     margin-bottom: 50px;
 }
 
-
 /* =============================
    NAVBAR
 ============================= */
@@ -76,7 +75,6 @@ section {
     color: #4dd6c5;
 }
 
-
 /* =============================
    HERO
 ============================= */
@@ -85,11 +83,7 @@ section {
     padding-top: 150px;
     padding-bottom: 150px;
     text-align: center;
-    background: linear-gradient(
-        180deg,
-        #062235 0%,
-        #07334c 100%
-    );
+    background: linear-gradient(180deg, #062235 0%, #07334c 100%);
 }
 
 .hero-title {
@@ -143,7 +137,6 @@ section {
     background: rgba(77, 201, 184, 0.12);
 }
 
-/* Indicador scroll */
 .hero-scroll {
     margin-top: 70px;
 }
@@ -174,7 +167,6 @@ section {
     0% { top: 8px; opacity: 1; }
     100% { top: 22px; opacity: 0; }
 }
-
 
 /* =============================
    SOBRE MIM
@@ -222,7 +214,6 @@ section {
     font-size: 0.9rem;
 }
 
-
 /* =============================
    SKILLS
 ============================= */
@@ -235,8 +226,8 @@ section {
 }
 
 .skill-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
     padding: 28px;
     border-radius: 16px;
     transition: .3s;
@@ -246,7 +237,6 @@ section {
     transform: translateY(-4px);
     border-color: #2cc8b2;
 }
-
 
 /* =============================
    PORTFÓLIO
@@ -290,7 +280,7 @@ section {
     padding: 35px;
     border-radius: 18px;
     transition: .3s;
-    box-shadow: 0 0 25px rgba(0, 60, 90, 0.25);
+    box-shadow: 0 0 25px rgba(0,60,90,0.25);
 }
 
 .case-card:hover {
@@ -366,20 +356,20 @@ section {
 }
 
 .card-projeto {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255,255,255,0.18);
     padding: 28px;
     border-radius: 18px;
-    box-shadow: 0 0 18px rgba(0, 255, 225, 0.15);
+    box-shadow: 0 0 18px rgba(0,255,225,0.15);
     transition: 0.35s ease;
 }
 
 .card-projeto:hover {
     transform: translateY(-6px);
     border-color: #2cc8b2;
-    box-shadow: 0 0 30px rgba(0, 255, 225, 0.28);
+    box-shadow: 0 0 30px rgba(0,255,225,0.28);
 }
 
 .icone-card {
@@ -416,7 +406,6 @@ section {
     text-align: center;
     width: fit-content;
 }
-
 
 /* =============================
    MODAL
@@ -458,7 +447,6 @@ section {
     border: 1px solid rgba(255,255,255,0.15);
 }
 
-
 /* =============================
    CONTATO
 ============================= */
@@ -474,7 +462,6 @@ section {
     gap: 20px;
 }
 
-
 /* =============================
    FOOTER
 ============================= */
@@ -485,7 +472,6 @@ footer {
     color: #bcd2e5;
     margin-top: 40px;
 }
-
 
 /* =============================
    RESPONSIVIDADE
