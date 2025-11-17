@@ -1,195 +1,157 @@
-/* ============================================
-   ESTILOS GERAIS
-=============================================== */
+/* ============================
+   ESTILO GERAL
+============================ */
 body {
     margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
-    background: #061c2c;
-    color: #e4eef5;
-    line-height: 1.6;
+    background: #061a2a;
+    color: #e5f4ff;
+}
+
+h2.section-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #dff1ff;
 }
 
 section {
-    padding: 60px 20px;
-    max-width: 1200px;
+    padding: 80px 12%;
+}
+
+/* ============================
+   SOBRE MIM
+============================ */
+.about-container {
+    text-align: center;
+    max-width: 1000px;
     margin: auto;
 }
 
-h1, h2, h3 {
-    margin: 0 0 10px 0;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 32px;
-    color: #d9ecff;
-    text-align: center;
-}
-
-p {
-    font-size: 17px;
-    color: #d4e4f2;
-}
-
-/* ============================================
-   SOBRE MIM
-=============================================== */
-
-.sobre-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.sobre-img-topo {
-    width: 350px;
-    max-width: 90%;
+.about-img-top {
+    width: 280px;
+    margin: 0 auto 25px auto;
     display: block;
 }
 
-.sobre-img-bottom {
-    width: 300px;
-    max-width: 90%;
-    margin-top: 20px;
+.about-img-bottom {
+    width: 260px;
+    margin: 40px auto 0 auto;
+    display: block;
 }
 
-/* ============================================
-   CONTATO
-=============================================== */
-
-#contato {
-    text-align: center;
+/* ============================
+   GRUPOS DE CARTÕES
+============================ */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(77, 160, 255, 0.18);
+    border-radius: 18px;
+    padding: 30px;
+    width: 380px; /* tamanho igual para todos os cards */
+    min-height: 260px;
+    box-shadow: 0 0 25px rgba(0, 80, 160, 0.15);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #c5d9e6;
+    margin-bottom: 18px;
+}
+
+/* ============================
+   MINIATURAS DAS IMAGENS
+============================ */
+.card-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-images img {
+    width: 165px !important;   /* 🔥 TRÊS VEZES MAIOR */
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ============================
+   CONTATO (BOTÕES IGUAIS)
+============================ */
 .contact-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
+    gap: 18px;
+    margin-top: 35px;
 }
 
 .contact-buttons a {
-    padding: 14px 32px;
-    font-size: 17px;
-    color: #7cc7ff;
-    border: 2px solid #2ea3ff;
-    border-radius: 10px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.contact-buttons a:hover {
-    background: rgba(46, 163, 255, 0.18);
-}
-
-.btn-primary {
-    background: #2ea3ff;
-    color: white !important;
-    border: none;
-    padding: 14px 32px;
-    border-radius: 10px;
-}
-
-.btn-primary:hover {
-    background: #1c8ae0;
-}
-
-/* ============================================
-   TÍTULOS DE SEÇÃO
-=============================================== */
-
-.subtitulo {
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: #accbe6;
-}
-
-/* ============================================
-   GRID DE PROJETOS (CARDS)
-=============================================== */
-
-.cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-}
-
-.card-projeto {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    padding: 30px;
-    height: 380px; /* ajuste solicitado */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.card-header {
+.contact-btn {
+    width: 190px;         /* 🔥 TAMANHOS IGUAIS */
+    height: 60px;         /* 🔥 TAMANHOS IGUAIS */
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    cursor: pointer;
 }
 
-.card-header img {
-    width: 38px;
-    height: 38px;
+/* WhatsApp */
+.contact-btn.whatsapp {
+    background: #0bc242;
+    color: white;
 }
 
-/* ============================================
-   MINIATURAS (AGORA MAIORES)
-=============================================== */
-
-.miniaturas {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    margin-top: 15px;
-    padding-bottom: 8px;
+.contact-btn.whatsapp:hover {
+    background: #0e9c37;
 }
 
-.thumb {
-    width: 100px;        /* novo tamanho */
-    height: 75px;        /* novo tamanho */
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 2px solid rgba(255,255,255,0.12);
-    opacity: 0.9;
-    transition: .3s;
+/* Email / LinkedIn */
+.contact-btn.outline {
+    border: 2px solid #4db4ff;
+    color: #4db4ff;
+    background: transparent;
 }
 
-.thumb:hover {
-    opacity: 1;
-    transform: scale(1.05);
+.contact-btn.outline:hover {
+    background: rgba(77, 180, 255, 0.12);
 }
 
-/* ============================================
-   RESPONSIVIDADE
-=============================================== */
-
-@media (max-width: 768px) {
-    .card-projeto {
-        height: auto;
-    }
-
-    .thumb {
-        width: 90px;
-        height: 65px;
-    }
-
-    .contact-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .contact-buttons a,
-    .btn-primary {
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 900px) {
+    .card {
         width: 100%;
-        text-align: center;
+    }
+    .card-images img {
+        width: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-images img {
+        width: 120px;
+    }
+    .contact-btn {
+        width: 100%;
     }
 }
