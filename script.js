@@ -1,16 +1,24 @@
-// =====================================================
-// LIGHTBOX - Exibir imagem maior ao clicar
-// =====================================================
+// script.js limpo e otimizado
+// Mantido para futuras animações, interações e melhorias.
 
-function openLightbox(imgElement) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
+// =============================
+// SCROLL SUAVE PARA LINKS
+// =============================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        const targetID = this.getAttribute("href");
 
-    lightboxImg.src = imgElement.src;
-    lightbox.style.display = "flex";
-}
+        // Evita erro caso o link seja externo
+        if (!targetID.startsWith("#")) return;
 
-function closeLightbox() {
-    const lightbox = document.getElementById("lightbox");
-    lightbox.style.display = "none";
-}
+        e.preventDefault();
+        const targetElement = document.querySelector(targetID);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 60,
+                behavior: "smooth"
+            });
+        }
+    });
+});
