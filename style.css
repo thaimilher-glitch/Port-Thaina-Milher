@@ -358,7 +358,7 @@ section {
    PROJETOS TÉCNICOS – GLASS STYLE
 ============================= */
 
-.cards-container {
+.cards-tecnicos {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -416,7 +416,6 @@ section {
     text-align: center;
     width: fit-content;
 }
-
 
 
 /* =============================
