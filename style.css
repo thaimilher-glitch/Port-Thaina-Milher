@@ -354,6 +354,70 @@ section {
     background: #2cc8b230;
 }
 
+/* =============================
+   PROJETOS TÉCNICOS – GLASS STYLE
+============================= */
+
+.cards-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card-projeto {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 0 18px rgba(0, 255, 225, 0.15);
+    transition: 0.35s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-6px);
+    border-color: #2cc8b2;
+    box-shadow: 0 0 30px rgba(0, 255, 225, 0.28);
+}
+
+.icone-card {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2cc8b2;
+}
+
+.card-projeto h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #e8f8ff;
+}
+
+.desc-card {
+    font-size: 0.97rem;
+    color: #cce6f3;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+.desc-card br {
+    line-height: 2.1;
+}
+
+.card-projeto .btn-secondary {
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+}
+
+
 
 /* =============================
    MODAL
