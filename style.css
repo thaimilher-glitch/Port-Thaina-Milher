@@ -14,7 +14,6 @@ body {
     color: #e5f4ff;
 }
 
-/* Container padrão */
 section {
     padding: 100px 10%;
 }
@@ -181,23 +180,38 @@ section {
    SOBRE MIM
 ============================= */
 
-.sobre {
-    text-align: center;
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.sobre-foto {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 3px solid #2cc8b2;
+    box-shadow: 0 0 25px rgba(0, 200, 180, 0.2);
+}
+
+.sobre-texto {
+    flex: 1;
 }
 
 .sobre-intro {
     max-width: 850px;
-    margin: 0 auto 20px auto;
     font-size: 1.1rem;
+    margin-bottom: 20px;
     color: #d5e9f7;
 }
 
 .sobre-tecnologias {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
-    margin: 35px 0;
+    margin-top: 25px;
 }
 
 .sobre-tecnologias span {
@@ -210,11 +224,11 @@ section {
 
 
 /* =============================
-   CARDS DE HABILIDADES
+   SKILLS
 ============================= */
 
 .skills-grid {
-    margin-top: 50px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 25px;
@@ -233,14 +247,9 @@ section {
     border-color: #2cc8b2;
 }
 
-.skill-card h3 {
-    margin-bottom: 10px;
-    color: #e5f4ff;
-}
-
 
 /* =============================
-   PORTFÓLIO (PROJETOS)
+   PORTFÓLIO
 ============================= */
 
 .filter-buttons {
@@ -268,17 +277,20 @@ section {
 }
 
 .projetos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .case-card {
     background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    padding: 28px;
-    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 35px;
+    border-radius: 18px;
     transition: .3s;
+    box-shadow: 0 0 25px rgba(0, 60, 90, 0.25);
 }
 
 .case-card:hover {
@@ -286,14 +298,34 @@ section {
     border-color: #2cc8b2;
 }
 
-.case-metodo {
-    color: #9bdfe4;
-    margin-bottom: 18px;
+.case-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.case-bloco h4 {
-    margin: 10px 0 4px;
-    color: #c0ecf2;
+.case-thumb {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.case-metodo {
+    color: #9bdfe4;
+    margin: 12px 0 18px;
+}
+
+.case-bloco ul {
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 1.55;
+}
+
+.case-bloco li {
+    margin-bottom: 6px;
 }
 
 .case-tags span {
@@ -324,7 +356,7 @@ section {
 
 
 /* =============================
-   MODAL (IMAGENS)
+   MODAL
 ============================= */
 
 .modal {
@@ -397,6 +429,27 @@ footer {
 ============================= */
 
 @media (max-width: 900px) {
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-foto {
+        width: 220px;
+        height: 220px;
+    }
+
+    .case-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .case-thumb {
+        width: 85px;
+        height: 85px;
+    }
+
     .hero-title {
         font-size: 2.4rem;
     }
