@@ -1,5 +1,5 @@
 /* =========================================
-    SCROLL SUAVE
+   SCROLL SUAVE PARA LINKS DO MENU
 ========================================= */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function (e) {
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
         e.preventDefault();
         window.scrollTo({
-            top: target.offsetTop - 60,
+            top: target.offsetTop - 70,
             behavior: "smooth"
         });
     });
@@ -16,91 +16,116 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 
 /* =========================================
-    FILTRO DE PROJETOS (DASHBOARDS / TÉCNICOS)
+   FILTRO DOS PROJETOS (Dashboards / Técnicos)
 ========================================= */
+
 const filterButtons = document.querySelectorAll(".filter-btn");
-const projects = document.querySelectorAll(".case-card");
+const cards = document.querySelectorAll(".case-card");
 
 filterButtons.forEach(btn => {
     btn.addEventListener("click", () => {
 
-        // Remove seleção anterior
+        // Remove seleção antiga
         filterButtons.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
 
-        const categoria = btn.dataset.filter;
+        const filtro = btn.dataset.filter;
 
-        projects.forEach(card => {
-            const cardCategory = card.dataset.category;
+        cards.forEach(card => {
+            const categoria = card.dataset.category;
 
-            if (categoria === "dashboards" && cardCategory === "dashboards") {
+            if (filtro === categoria) {
                 card.style.display = "block";
-
-            } else if (categoria === "tecnicos" && cardCategory === "tecnicos") {
-                card.style.display = "block";
-
-            } else if (categoria !== cardCategory) {
+            } else {
                 card.style.display = "none";
             }
         });
+
     });
 });
 
 
 /* =========================================
-    MODAL DE IMAGENS (DINÂMICO)
+   BANCO DE IMAGENS DO MODAL
 ========================================= */
 
-// OBJETO: cadastra aqui os painéis e imagens reais
 const projetosImagens = {
-    "pma-pos": [
-        "projeto-portf/power bi - Vendas 1.png",
-        "projeto-portf/power bi - vendas mobile.png",
-        "projeto-portf/power bi - comercial 2.png",
+
+    crm: [
+        "projeto-portf/power bi - operação de crm.png"
+    ],
+
+    logistica: [
+        "projeto-portf/power bi - receita logistica.png"
+    ],
+
+    concorrencia: [
         "projeto-portf/power bi -analise de concorrencia delivery - trimestre 3 de 2025.jpg"
     ],
 
-    "logistica-compra": [
-        "projeto-portf/python - regressão logistica 1.png",
-        "projeto-portf/python - regressão logistica 2.png",
-        "projeto-portf/python regressão logistica 3.png"
+    rh: [
+        "projeto-portf/power bi - analise de RH.png"
+    ],
+
+    executivo: [
+        "projeto-portf/power bi - executivo de pedidos.png"
+    ],
+
+    delivery: [
+        "projeto-portf/power bi - delivery 1.png",
+        "projeto-portf/power bi - delivery 2.png",
+        "projeto-portf/power bi - delivery 3.png",
+        "projeto-portf/power bi - delivery 4.png",
+        "projeto-portf/power bi - delivery 5.png"
+    ],
+
+    ecomm: [
+        "projeto-portf/power bi - ecomm 1.png",
+        "projeto-portf/power bi - ecomm 2.png",
+        "projeto-portf/power bi - ecomm 3.png"
     ]
 };
 
 
-// ELEMENTOS DO MODAL
+/* =========================================
+   MODAL DE IMAGENS DOS PROJETOS
+========================================= */
+
 const modal = document.getElementById("modal-imagens");
 const modalTitulo = document.getElementById("modal-titulo");
 const modalCarrossel = document.getElementById("modal-carrossel");
-const closeModal = document.querySelector(".close-modal");
+const closeBtn = document.querySelector(".close-modal");
 
+document.querySelectorAll(".btn-vermais").forEach(button => {
 
-// BOTÕES "VER MAIS"
-document.querySelectorAll(".btn-vermais").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const projetoID = btn.dataset.projeto;
+    button.addEventListener("click", () => {
+
+        const projetoID = button.dataset.projeto;
         const imagens = projetosImagens[projetoID] || [];
 
-        // Título automático a partir do card
-        modalTitulo.textContent = btn.closest(".case-card").querySelector("h3").textContent;
+        // Título do card
+        const titulo = button.closest(".case-card").querySelector("h3").textContent;
+        modalTitulo.textContent = titulo;
 
-        // Carrega imagens no modal
+        // Carregar imagens
         modalCarrossel.innerHTML = imagens
             .map(img => `<img src="${img}" class="modal-img">`)
             .join("");
 
-        // Exibe modal
         modal.style.display = "flex";
     });
+
 });
 
 
-// FECHAR MODAL (X)
-closeModal.addEventListener("click", () => {
+/* =========================================
+   FECHAR MODAL
+========================================= */
+
+closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// FECHAR MODAL AO CLICAR FORA
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.style.display = "none";
