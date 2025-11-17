@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio • Thaina Milher</title>
 
     <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h2 class="hero-title">
-                Decisões Inteligentes <br>
+                Decisões Inteligentes <br />
                 <span>Guiadas por Dados</span>
             </h2>
 
@@ -43,8 +43,8 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#contato" class="btn-primary">Entre em Contato →</a>
-                <a href="#portfolio" class="btn-secondary">Veja Meu Portfólio</a>
+                <a href="#portfolio" class="btn-secondary">Ver Projetos</a>
+                <a href="#contato" class="btn-primary">Contato →</a>
             </div>
         </div>
 
@@ -57,146 +57,357 @@
     <section id="sobre" class="sobre">
         <h2 class="section-title">Sobre <span>Mim</span></h2>
 
-        <p class="sobre-intro">
-            Sou <strong>Analista de Dados</strong> com experiência prática em marketing, e-commerce,
-            pós-graduação, performance e operações. Já atuei em diversas áreas de negócio
-            convertendo métricas em decisões estratégicas.
-        </p>
+        <div class="sobre-container">
 
-        <p class="sobre-intro">
-            Tenho vivência com grandes volumes de dados, integrações diversas e modelos
-            de análise avançada. Meu foco é entender profundamente o negócio,
-            levantar as perguntas certas e construir soluções de dados que realmente
-            resolvem problemas.
-        </p>
+            <!-- SUA FOTO -->
+            <img src="projeto-portf/Thaina milher foto.jpeg" alt="Foto Thaina Milher" class="sobre-foto">
 
-        <div class="sobre-tecnologias">
-            <span>Power BI</span>
-            <span>SQL & BigQuery</span>
-            <span>Python</span>
-            <span>PySpark</span>
-            <span>GA4</span>
-            <span>Airflow</span>
+            <div class="sobre-texto">
+                <p class="sobre-intro">
+                    Sou <strong>Analista de Dados</strong> com experiência prática em marketing,
+                    e-commerce, pós-graduação, performance e operações. Já atuei em diversas áreas
+                    convertendo métricas em insights estratégicos que impactam diretamente o negócio.
+                </p>
+
+                <p class="sobre-intro">
+                    Trabalho com análises avançadas, dashboards profissionais, engenharia de dados,
+                    automações e machine learning. Meu propósito é apoiar decisões inteligentes,
+                    escaláveis e orientadas a dados.
+                </p>
+
+                <div class="sobre-tecnologias">
+                    <span>Power BI</span>
+                    <span>SQL</span>
+                    <span>BigQuery</span>
+                    <span>Python</span>
+                    <span>GA4</span>
+                    <span>Airflow</span>
+                </div>
+            </div>
         </div>
 
         <div class="skills-grid">
-
             <div class="skill-card">
                 <h3>Dashboards Avançados</h3>
-                <p>Power BI com modelagem, DAX e visuais personalizados para decisões estratégicas.</p>
+                <p>Power BI com DAX avançado, modelagem e narrativas visuais.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Engenharia de Dados</h3>
-                <p>SQL, BigQuery, PySpark e pipelines para grandes volumes de dados.</p>
+                <p>BigQuery, SQL otimizado, PySpark e pipelines ETL.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Machine Learning</h3>
-                <p>Regressão, clusterização e análise preditiva aplicada ao negócio.</p>
+                <p>Modelos de previsão, regressão e segmentação inteligente.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Automação</h3>
-                <p>Airflow, ETL automatizados e validações de KPIs em tempo real.</p>
+                <p>Airflow, Power Automate e scripts de validação.</p>
             </div>
 
             <div class="skill-card">
-                <h3>Performance & Marketing</h3>
-                <p>GA4, VTEX, LTV, CAC, Cohort e conversão.</p>
+                <h3>Marketing & CRM</h3>
+                <p>Funis, LTV, CAC, cohort e comportamento de usuários.</p>
             </div>
 
             <div class="skill-card">
                 <h3>Desenvolvimento</h3>
-                <p>Python para análises complexas e soluções personalizadas.</p>
+                <p>Python para análises robustas e automação de processos.</p>
             </div>
-
         </div>
     </section>
 
     <!-- PORTFÓLIO -->
     <section id="portfolio" class="portfolio">
-
-        <h2 class="section-title">Portfólio de <span>Projetos</span></h2>
+        <h2 class="section-title">Projetos & <span>Knowledge</span></h2>
         <p class="section-subtitle">
-            Soluções de dados que geram resultados reais para o negócio
+            Uma visão prática do meu trabalho e domínio técnico.
         </p>
 
-        <!-- BOTÕES DE FILTRO -->
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="dashboards">Dashboards</button>
             <button class="filter-btn" data-filter="tecnicos">Projetos Técnicos</button>
         </div>
 
-        <!-- GRID DE PROJETOS -->
         <div class="projetos-container">
 
-            <!-- EXEMPLO DE CASE (você depois vai me dizer quais adicionar) -->
+            <!-- ===============================
+                 CARD 1 – Operação de CRM
+            ================================ -->
             <div class="case-card" data-category="dashboards">
-                <h3>Dashboard de Leads & Pós-Graduação</h3>
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - operação de crm.png" class="case-thumb">
+                    <h3>Dashboard Operacional de CRM</h3>
+                </div>
+
                 <p class="case-metodo">
-                    Análise completa de PMA, MAT, Receita e Conversão com drill-through por curso.
+                    Indicadores operacionais de estoque, vendas e performance por loja.
                 </p>
 
                 <div class="case-bloco">
-                    <h4>Entrada</h4>
-                    <p>CRM, LMS, Plataforma de Marketing</p>
-                </div>
-
-                <div class="case-bloco">
-                    <h4>Solução</h4>
-                    <p>Modelagem dimensional, DAX avançado, segmentação inteligente</p>
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Total de produtos, pedidos e clientes</li>
+                        <li>Itens fora de estoque</li>
+                        <li>Lojas com maior volume de vendas</li>
+                        <li>Despesa vs lucro (últimos meses)</li>
+                    </ul>
                 </div>
 
                 <div class="case-bloco">
                     <h4>Resultado</h4>
-                    <p>Aumento de 23% na conversão identificando gargalos no funil</p>
+                    <ul>
+                        <li>Identificação rápida de rupturas</li>
+                        <li>Monitoramento diário centralizado</li>
+                        <li>Melhores decisões de abastecimento</li>
+                        <li>Visão clara por loja e comportamento temporal</li>
+                    </ul>
                 </div>
 
                 <div class="case-tags">
-                    <span>Power BI</span>
-                    <span>DAX</span>
-                    <span>SQL</span>
+                    <span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span>
                 </div>
 
-                <button class="btn-vermais" data-projeto="pma-pos">Ver Mais →</button>
+                <button class="btn-vermais" data-projeto="crm">Ver Mais →</button>
             </div>
 
-            <!-- Outro exemplo -->
-            <div class="case-card" data-category="tecnicos">
-                <h3>Probabilidade de Compra (ML)</h3>
-                <p class="case-metodo">
-                    Regressão Logística para identificar leads com maior probabilidade de conversão
-                </p>
-
-                <div class="case-bloco">
-                    <h4>Entrada</h4>
-                    <p>Dados demográficos, comportamento web, histórico de interação</p>
+            <!-- ===============================
+                 CARD 2 – Receita Logística
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - receita logistica.png" class="case-thumb">
+                    <h3>Dashboard de Receita e Entregas – Logística</h3>
                 </div>
 
+                <p class="case-metodo">Indicadores completos de receita, viagens e distribuição logística.</p>
+
                 <div class="case-bloco">
-                    <h4>Solução</h4>
-                    <p>Balanceamento, seleção de features, hiperparâmetros otimizados</p>
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Receita bruta / valor movimentado</li>
+                        <li>Entregas e peso transportado</li>
+                        <li>Viagens por ano e mês</li>
+                        <li>Mapa de distribuição por região</li>
+                    </ul>
                 </div>
 
                 <div class="case-bloco">
                     <h4>Resultado</h4>
-                    <p>Aumento de 40% na eficiência da equipe de vendas</p>
+                    <ul>
+                        <li>Compreensão completa da operação</li>
+                        <li>Identificação de sazonalidades</li>
+                        <li>Correlação entre volume e receita</li>
+                        <li>Decisões assertivas de rota e frota</li>
+                    </ul>
                 </div>
 
                 <div class="case-tags">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>ROC-AUC</span>
+                    <span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span>
                 </div>
 
-                <button class="btn-vermais" data-projeto="logistica-compra">Ver Mais →</button>
+                <button class="btn-vermais" data-projeto="logistica">Ver Mais →</button>
+            </div>
+
+            <!-- ===============================
+                 CARD 3 – Concorrência Delivery
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi -analise de concorrencia delivery - trimestre 3 de 2025.jpg"
+                        class="case-thumb">
+                    <h3>Análise Comparativa de Concorrentes – Delivery</h3>
+                </div>
+
+                <p class="case-metodo">Benchmark avançado entre players do mercado de delivery.</p>
+
+                <div class="case-bloco">
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Market share e pedidos diários</li>
+                        <li>Tempo médio de entrega</li>
+                        <li>Rating de clientes</li>
+                        <li>Comparativo temporal lado a lado</li>
+                    </ul>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <ul>
+                        <li>Visão clara da posição competitiva</li>
+                        <li>Identificação de players em crescimento</li>
+                        <li>Insights estratégicos para logística e atendimento</li>
+                        <li>Comparação completa de desempenho</li>
+                    </ul>
+                </div>
+
+                <div class="case-tags"><span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span></div>
+
+                <button class="btn-vermais" data-projeto="concorrencia">Ver Mais →</button>
+            </div>
+
+            <!-- ===============================
+                 CARD 4 – People Analytics
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - analise de RH.png" class="case-thumb">
+                    <h3>Dashboard de People Analytics – RH</h3>
+                </div>
+
+                <p class="case-metodo">
+                    Indicadores estratégicos de colaboradores, turnover e clima organizacional.
+                </p>
+
+                <div class="case-bloco">
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Ativos / desligamentos / contratações</li>
+                        <li>Absenteísmo / Custo de hora extra</li>
+                        <li>Turnover anual</li>
+                        <li>Probabilidade de saída (TOP 3)</li>
+                    </ul>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <ul>
+                        <li>Mapeamento de riscos de desligamento</li>
+                        <li>Visão estratégica de retenção</li>
+                        <li>Perfis críticos identificados</li>
+                        <li>Análise histórica de contratações</li>
+                    </ul>
+                </div>
+
+                <div class="case-tags">
+                    <span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span>
+                </div>
+
+                <button class="btn-vermais" data-projeto="rh">Ver Mais →</button>
+            </div>
+
+            <!-- ===============================
+                 CARD 5 – Executivo
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - executivo de pedidos.png" class="case-thumb">
+                    <h3>Dashboard Executivo de Vendas e Pedidos</h3>
+                </div>
+
+                <p class="case-metodo">Visão executiva completa da operação comercial.</p>
+
+                <div class="case-bloco">
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Sales, Profit, Orders, Customers</li>
+                        <li>Top produtos / Top clientes</li>
+                        <li>Análises por UF, categoria e segmento</li>
+                        <li>Comparação anual</li>
+                    </ul>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <ul>
+                        <li>Melhor entendimento da operação</li>
+                        <li>Identificação de oportunidades de lucro</li>
+                        <li>Insights regionais</li>
+                        <li>Suporte estratégico ao time comercial</li>
+                    </ul>
+                </div>
+
+                <div class="case-tags">
+                    <span>Power BI</span><span>DAX</span><span>SQL</span>
+                </div>
+
+                <button class="btn-vermais" data-projeto="executivo">Ver Mais →</button>
+            </div>
+
+            <!-- ===============================
+                 CARD 6 – Delivery Center (5 páginas)
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - delivery 1.png" class="case-thumb">
+                    <h3>Delivery Center – Performance Operacional, Financeira e Comercial</h3>
+                </div>
+
+                <p class="case-metodo">Visão 360° da operação de delivery.</p>
+
+                <div class="case-bloco">
+                    <h4>Solução – KPIs das 5 páginas</h4>
+                    <ul>
+                        <li>Pedidos, entregas, cancelamentos</li>
+                        <li>Receita, lucro, ticket médio</li>
+                        <li>Matriz logística detalhada</li>
+                        <li>Top lojas e canais</li>
+                        <li>Tendência semanal/mensal/trimestral</li>
+                    </ul>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <ul>
+                        <li>Redução de custos logísticos</li>
+                        <li>Melhoria de SLA</li>
+                        <li>Otimização por canal e região</li>
+                        <li>Apoio à expansão estratégica</li>
+                    </ul>
+                </div>
+
+                <div class="case-tags">
+                    <span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span>
+                </div>
+
+                <button class="btn-vermais" data-projeto="delivery">Ver Mais →</button>
+            </div>
+
+            <!-- ===============================
+                 CARD 7 – E-commerce
+            ================================ -->
+            <div class="case-card" data-category="dashboards">
+                <div class="case-header">
+                    <img src="projeto-portf/power bi - ecomm 1.png" class="case-thumb">
+                    <h3>E-commerce – Funil Digital, Canais e Modalidades</h3>
+                </div>
+
+                <p class="case-metodo">Jornada completa Sessão → Lead → Matrícula</p>
+
+                <div class="case-bloco">
+                    <h4>Solução – KPIs apresentados</h4>
+                    <ul>
+                        <li>Sessões, leads, matrículas</li>
+                        <li>CPL, CPA, CPMAT</li>
+                        <li>Investimento × resultados</li>
+                        <li>Performance por canal</li>
+                        <li>Análises por modalidade</li>
+                    </ul>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <ul>
+                        <li>Otimização de mídia</li>
+                        <li>Identificação dos melhores canais</li>
+                        <li>Aumento de matrículas</li>
+                        <li>Insights acionáveis para marketing</li>
+                    </ul>
+                </div>
+
+                <div class="case-tags">
+                    <span>Power BI</span><span>DAX</span><span>SQL</span><span>Figma</span>
+                </div>
+
+                <button class="btn-vermais" data-projeto="ecomm">Ver Mais →</button>
             </div>
 
         </div>
     </section>
 
-    <!-- MODAL DE IMAGENS -->
+    <!-- MODAL -->
     <div id="modal-imagens" class="modal">
         <div class="modal-content">
             <span class="close-modal">×</span>
@@ -217,13 +428,11 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>© 2025 • Desenvolvido por Thaina Milher</p>
     </footer>
 
-    <!-- JS -->
     <script src="script.js"></script>
-
 </body>
+
 </html>
