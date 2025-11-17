@@ -3,118 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Thaina Milher</title>
+    <title>Portfólio • Thaina Milher</title>
 
-    <link rel="stylesheet" href="style.css">   <!-- ✔ CORRETO -->
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <header>
-        <nav>
+    <header class="navbar">
+        <div class="nav-container">
             <h1 class="logo">Thaina Milher</h1>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#portfolio">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- HERO -->
     <section id="home" class="hero">
-        <img src="projeto-portf/Thaina milher foto.jpeg" alt="Thaina Milher" class="hero-img">
-        <div class="hero-text">
-            <h2>Analista de Dados</h2>
-            <p>Transformo dados complexos em decisões estratégicas que impulsionam resultados reais.</p>
-            <a href="#portfolio" class="btn-primary">Ver Portfólio</a>
+        <div class="hero-content">
+            <h2 class="hero-title">
+                Decisões Inteligentes <br>
+                <span>Guiadas por Dados</span>
+            </h2>
+
+            <p class="hero-subtitle">
+                Especialista em transformar dados brutos em insights que resolvem
+                problemas reais de negócio.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contato" class="btn-primary">Entre em Contato →</a>
+                <a href="#portfolio" class="btn-secondary">Veja Meu Portfólio</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
         </div>
     </section>
 
     <!-- SOBRE MIM -->
     <section id="sobre" class="sobre">
-
-        <img src="projeto-portf/Sobre_mim_anima.png" class="sobre-imagem-topo" alt="Ilustração Sobre Mim">
-
-        <h2>Sobre Mim</h2>
+        <h2 class="section-title">Sobre <span>Mim</span></h2>
 
         <p class="sobre-intro">
-            Sou Analista de Dados com experiência prática em marketing, e-commerce, performance e operações,
-            CRM, financeiro, logística e compras.
+            Sou <strong>Analista de Dados</strong> com experiência prática em marketing, e-commerce,
+            pós-graduação, performance e operações. Já atuei em diversas áreas de negócio
+            convertendo métricas em decisões estratégicas.
         </p>
 
         <p class="sobre-intro">
-            Ao longo da minha trajetória, desenvolvi planilhas automatizadas e dashboards analíticos para compras,
-            logística, financeiro e CRM, aprimorando o acompanhamento de indicadores, reduzindo retrabalhos e fortalecendo
-            a cultura de dados nas tomadas de decisão.
+            Tenho vivência com grandes volumes de dados, integrações diversas e modelos
+            de análise avançada. Meu foco é entender profundamente o negócio,
+            levantar as perguntas certas e construir soluções de dados que realmente
+            resolvem problemas.
         </p>
 
-        <p class="sobre-intro">
-            Meu trabalho combina análise técnica e visão de negócio, transformando dados complexos em histórias claras
-            e estratégicas. Sou formada em Análise de Sistemas de Computação pelo Centro Universitário Ítalo Brasileiro
-            e atualmente curso Pós-Graduação em Ciência de Dados e Analytics Avançados, ampliando conhecimentos em estatística,
-            machine learning e engenharia de dados.
-        </p>
+        <div class="sobre-tecnologias">
+            <span>Power BI</span>
+            <span>SQL & BigQuery</span>
+            <span>Python</span>
+            <span>PySpark</span>
+            <span>GA4</span>
+            <span>Airflow</span>
+        </div>
 
-        <p class="sobre-intro">
-            Tenho vivência com grandes volumes de dados, integrações diversas e modelos de análise avançada.
-            Meu foco é entender profundamente o negócio, levantar as perguntas certas e construir soluções de dados
-            que realmente resolvem problemas.
-        </p>
+        <div class="skills-grid">
 
-        <img src="projeto-portf/sobre_mim_comemoração.png" class="sobre-imagem-baixo" alt="Ilustração Meta">
-
-        <!-- CARDS -->
-        <div class="sobre-grid">
-
-            <div class="sobre-card">
-                <div class="sobre-icone">📊</div>
+            <div class="skill-card">
                 <h3>Dashboards Avançados</h3>
-                <p>Power BI com modelagem dimensional, DAX avançado e visuais profissionais.</p>
+                <p>Power BI com modelagem, DAX e visuais personalizados para decisões estratégicas.</p>
             </div>
 
-            <div class="sobre-card">
-                <div class="sobre-icone">🛢</div>
+            <div class="skill-card">
                 <h3>Engenharia de Dados</h3>
-                <p>SQL, BigQuery, Athena, PySpark, ETL e pipelines escaláveis.</p>
+                <p>SQL, BigQuery, PySpark e pipelines para grandes volumes de dados.</p>
             </div>
 
-            <div class="sobre-card">
-                <div class="sobre-icone">🧠</div>
+            <div class="skill-card">
                 <h3>Machine Learning</h3>
-                <p>Modelos preditivos, clusterização e análises avançadas.</p>
+                <p>Regressão, clusterização e análise preditiva aplicada ao negócio.</p>
             </div>
 
-            <div class="sobre-card">
-                <div class="sobre-icone">🔁</div>
+            <div class="skill-card">
                 <h3>Automação</h3>
-                <p>Airflow, Power Automate, Fabric e validação automática de KPIs.</p>
+                <p>Airflow, ETL automatizados e validações de KPIs em tempo real.</p>
             </div>
 
-            <div class="sobre-card">
-                <div class="sobre-icone">📈</div>
+            <div class="skill-card">
                 <h3>Performance & Marketing</h3>
-                <p>GA4, Cohort, CAC, LTV, campanhas e análise de conversão.</p>
+                <p>GA4, VTEX, LTV, CAC, Cohort e conversão.</p>
             </div>
 
-            <div class="sobre-card">
-                <div class="sobre-icone">💰</div>
-                <h3>Finanças</h3>
-                <p>DRE, projeções, controle de orçamento e análises estratégicas.</p>
-            </div>
-
-            <div class="sobre-card">
-                <div class="sobre-icone">🧮</div>
-                <h3>Excel Avançado</h3>
-                <p>Automação, fórmulas avançadas, dashboards e VBA.</p>
-            </div>
-
-            <div class="sobre-card">
-                <div class="sobre-icone">🐍</div>
-                <h3>Python</h3>
-                <p>Estatística avançada, ETL, modelagem e scripts analíticos.</p>
+            <div class="skill-card">
+                <h3>Desenvolvimento</h3>
+                <p>Python para análises complexas e soluções personalizadas.</p>
             </div>
 
         </div>
@@ -123,198 +117,113 @@
     <!-- PORTFÓLIO -->
     <section id="portfolio" class="portfolio">
 
-        <h2 class="titulo-portfolio">Projetos & Knowledge</h2>
-        <p class="subtitulo-portfolio">Uma visão prática do meu trabalho e domínio técnico</p>
+        <h2 class="section-title">Portfólio de <span>Projetos</span></h2>
+        <p class="section-subtitle">
+            Soluções de dados que geram resultados reais para o negócio
+        </p>
 
-        <!-- POWER BI -->
-        <h3 class="categoria">Power BI</h3>
-
-        <div class="cards-container">
-
-            <div class="card-projeto">
-                <div class="icone-card">📈</div>
-                <h4>Dashboard de Vendas & Mobile</h4>
-                <p class="desc-card">Visão completa de vendas, evolução e performance.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/power bi - Vendas 1.png" class="thumb">
-                    <img src="projeto-portf/power bi - vendas mobile.png" class="thumb">
-                    <img src="projeto-portf/power bi -comercial 1.png" class="thumb">
-                    <img src="projeto-portf/power bi - comercial 2.png" class="thumb">
-                </div>
-            </div>
-
-            <div class="card-projeto">
-                <div class="icone-card">🚚</div>
-                <h4>Dashboards de Delivery</h4>
-                <p class="desc-card">Monitoramento logístico e performance operacional.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/power bi - delivery 1.png" class="thumb">
-                    <img src="projeto-portf/power bi - delivery 2.png" class="thumb">
-                    <img src="projeto-portf/power bi - delivery 3.png" class="thumb">
-                    <img src="projeto-portf/power bi - delivery 4.png" class="thumb">
-                    <img src="projeto-portf/power bi - delivery 5.png" class="thumb">
-                </div>
-            </div>
-
-            <div class="card-projeto">
-                <div class="icone-card">🛒</div>
-                <h4>E-commerce & Performance</h4>
-                <p class="desc-card">Análises completas do funil, CAC, LTV e conversão.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/power bi - ecomm 1.png" class="thumb">
-                    <img src="projeto-portf/power bi - ecomm 2.png" class="thumb">
-                    <img src="projeto-portf/power bi - ecomm 3.png" class="thumb">
-                    <img src="projeto-portf/power bi -analise de concorrencia delivery - trimestre 3 de 2025.jpg" class="thumb">
-                </div>
-            </div>
+        <!-- BOTÕES DE FILTRO -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="dashboards">Dashboards</button>
+            <button class="filter-btn" data-filter="tecnicos">Projetos Técnicos</button>
         </div>
 
-        <!-- MACHINE LEARNING -->
-        <h3 class="categoria">Machine Learning</h3>
+        <!-- GRID DE PROJETOS -->
+        <div class="projetos-container">
 
-        <div class="cards-container">
+            <!-- EXEMPLO DE CASE (você depois vai me dizer quais adicionar) -->
+            <div class="case-card" data-category="dashboards">
+                <h3>Dashboard de Leads & Pós-Graduação</h3>
+                <p class="case-metodo">
+                    Análise completa de PMA, MAT, Receita e Conversão com drill-through por curso.
+                </p>
 
-            <div class="card-projeto">
-                <div class="icone-card">🧬</div>
-                <h4>Modelos Preditivos</h4>
-                <p class="desc-card">Regressão, ARIMA, previsões e análises estatísticas.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/python regressão.png" class="thumb">
-                    <img src="projeto-portf/python regressão poli.png" class="thumb">
-                    <img src="projeto-portf/python - previsão de 3 meses com arima.png" class="thumb">
-                    <img src="projeto-portf/python serie temporal.png" class="thumb">
+                <div class="case-bloco">
+                    <h4>Entrada</h4>
+                    <p>CRM, LMS, Plataforma de Marketing</p>
                 </div>
+
+                <div class="case-bloco">
+                    <h4>Solução</h4>
+                    <p>Modelagem dimensional, DAX avançado, segmentação inteligente</p>
+                </div>
+
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <p>Aumento de 23% na conversão identificando gargalos no funil</p>
+                </div>
+
+                <div class="case-tags">
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>SQL</span>
+                </div>
+
+                <button class="btn-vermais" data-projeto="pma-pos">Ver Mais →</button>
             </div>
 
-            <div class="card-projeto">
-                <div class="icone-card">🧩</div>
-                <h4>Clusters & Segmentação</h4>
-                <p class="desc-card">K-Means, silhueta, e agrupamentos estratégicos.</p>
+            <!-- Outro exemplo -->
+            <div class="case-card" data-category="tecnicos">
+                <h3>Probabilidade de Compra (ML)</h3>
+                <p class="case-metodo">
+                    Regressão Logística para identificar leads com maior probabilidade de conversão
+                </p>
 
-                <div class="thumbs">
-                    <img src="projeto-portf/python clusters analises.png" class="thumb">
-                    <img src="projeto-portf/python cluster bar.png" class="thumb">
-                    <img src="projeto-portf/python - clusters silhuet.png" class="thumb">
-                    <img src="projeto-portf/python correlação.png" class="thumb">
+                <div class="case-bloco">
+                    <h4>Entrada</h4>
+                    <p>Dados demográficos, comportamento web, histórico de interação</p>
                 </div>
-            </div>
 
-            <div class="card-projeto">
-                <div class="icone-card">🧠</div>
-                <h4>Regressão Logística</h4>
-                <p class="desc-card">Modelos de probabilidade, classificação e otimização.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/python - regressão logistica 1.png" class="thumb">
-                    <img src="projeto-portf/python - regressão logistica 2.png" class="thumb">
-                    <img src="projeto-portf/python regressão logistica 3.png" class="thumb">
-                    <img src="projeto-portf/python - regressão logistica treinamento.png" class="thumb">
+                <div class="case-bloco">
+                    <h4>Solução</h4>
+                    <p>Balanceamento, seleção de features, hiperparâmetros otimizados</p>
                 </div>
-            </div>
-        </div>
 
-        <!-- SQL -->
-        <h3 class="categoria">SQL & Engenharia</h3>
-
-        <div class="cards-container">
-
-            <div class="card-projeto">
-                <div class="icone-card">💾</div>
-                <h4>SQL Otimizado</h4>
-                <p class="desc-card">Queries performáticas em BigQuery e Athena.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/sql bigquery.png" class="thumb">
-                    <img src="projeto-portf/slq athena.png" class="thumb">
-                    <img src="projeto-portf/slq +python.jpg" class="thumb">
+                <div class="case-bloco">
+                    <h4>Resultado</h4>
+                    <p>Aumento de 40% na eficiência da equipe de vendas</p>
                 </div>
-            </div>
-        </div>
 
-        <!-- AUTOMATION -->
-        <h3 class="categoria">Automação & Pipelines</h3>
-
-        <div class="cards-container">
-
-            <div class="card-projeto">
-                <div class="icone-card">🔁</div>
-                <h4>Power Automate & ETL</h4>
-                <p class="desc-card">Automação, notificações e validação contínua.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/power automate - 1.png" class="thumb">
-                    <img src="projeto-portf/power automate - exemplo.png" class="thumb">
-                    <img src="projeto-portf/power automate 2.png" class="thumb">
-                    <img src="projeto-portf/power automate 3.png" class="thumb">
+                <div class="case-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>ROC-AUC</span>
                 </div>
-            </div>
 
-            <div class="card-projeto">
-                <div class="icone-card">🌬</div>
-                <h4>Airflow</h4>
-                <p class="desc-card">Orquestração de DAGs e fluxos ETL.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/airflow.png" class="thumb">
-                    <img src="projeto-portf/airflow fluxo.png" class="thumb">
-                </div>
-            </div>
-
-            <div class="card-projeto">
-                <div class="icone-card">⚙️</div>
-                <h4>Microsoft Fabric</h4>
-                <p class="desc-card">Pipelines e integrações corporativas.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/microsof fabrich - pipeline.png" class="thumb">
-                    <img src="projeto-portf/microsoft fabrich - pipeline de dados 2.png" class="thumb">
-                </div>
+                <button class="btn-vermais" data-projeto="logistica-compra">Ver Mais →</button>
             </div>
 
         </div>
-
-        <!-- EXCEL -->
-        <h3 class="categoria">Excel & Finanças</h3>
-
-        <div class="cards-container">
-
-            <div class="card-projeto">
-                <div class="icone-card">📘</div>
-                <h4>DRE & Planilhas Automatizadas</h4>
-                <p class="desc-card">Excel avançado, modelos financeiros e dashboards.</p>
-
-                <div class="thumbs">
-                    <img src="projeto-portf/Excel - DRE.png" class="thumb">
-                    <img src="projeto-portf/Execel - DRE modelo.png" class="thumb">
-                    <img src="projeto-portf/Excel planilha automatizada.png" class="thumb">
-                    <img src="projeto-portf/Excel relatorio.png" class="thumb">
-                </div>
-            </div>
-
-        </div>
-
     </section>
+
+    <!-- MODAL DE IMAGENS -->
+    <div id="modal-imagens" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 id="modal-titulo"></h2>
+            <div id="modal-carrossel"></div>
+        </div>
+    </div>
 
     <!-- CONTATO -->
     <section id="contato" class="contato">
-        <h2>Contato</h2>
+        <h2 class="section-title">Contato</h2>
         <p>Vamos conversar? Estou aberta a projetos e oportunidades.</p>
 
         <div class="contact-buttons">
-            <a href="https://wa.me/5511981829593" class="btn-primary" target="_blank">WhatsApp</a>
+            <a href="https://wa.me/5511981829593" target="_blank" class="btn-primary">WhatsApp</a>
             <a href="mailto:thai.milher@gmail.com" class="btn-secondary">E-mail</a>
-            <a href="https://www.linkedin.com/in/thaina-millher/" class="btn-secondary" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/thaina-millher/" target="_blank" class="btn-secondary">LinkedIn</a>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 • Desenvolvido por Thaina Milher</p>
     </footer>
 
-</body>
+    <!-- JS -->
+    <script src="script.js"></script>
 
+</body>
 </html>
